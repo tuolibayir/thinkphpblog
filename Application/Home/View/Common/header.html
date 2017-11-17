@@ -1,0 +1,24 @@
+<meta charset="utf-8">
+    <title>{$settingrs.s_name}</title>
+        <link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/css/style.css">    
+    </head>
+    <body>  
+        <div class="warp">  
+            <div class="header">
+                <div class="header-center">
+                   
+                    <div class="logo">
+                        
+                        <a class="logo-name" name="s_name" href="#">{$settingrs.s_name}</a>
+                        <div class="logo-text">{$settingrs.s_description}</div>
+                       
+                    </div>
+                    <div class="nav">
+                        <ul class="nav-ul">
+                            <volist name="navers" id="vo">
+                                <li><a href="__MODULE__/<if condition="$vo['cate_id'] eq 4">index<elseif condition="$vo['cate_id'] eq 5"/>article<elseif condition="$vo['cate_id'] eq 6"/>photo<elseif condition="$vo['cate_id'] eq 7"/>about</if>/index">{$vo.cate_name}</a></li>
+                            </volist>
+                        </ul>
+                    </div>
+                </div>              
+            </div>          

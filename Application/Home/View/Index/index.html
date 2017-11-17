@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+
+		<include file="Common:header"/>
+    	
+
+			<div class="content">
+				<div class="main">
+
+					<volist name="articles" id="vo">
+						<div class="log">
+							<h1><a href="__MODULE__/Article/post/id/{$vo.a_id}">{$vo.a_title}</a></h1>
+							<span class="log-time">发表于{$vo.time|date="Y-m-d H:i",###}</span>
+							<p>
+                            {$vo.a_content|htmlspecialchars_decode|msubstr=0,300,'utf-8',true}   
+                            </p>
+						</div>
+					</volist>
+
+					
+				</div>
+
+
+	<include file="Common:right"/>
+	<include file="Common:footer"/>				
+				

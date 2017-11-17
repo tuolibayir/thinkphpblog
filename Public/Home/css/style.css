@@ -1,0 +1,168 @@
+﻿html,body{
+	margin: 0;
+	padding: 0;
+	background-color: #EEEEEE;
+}
+h1,h2,h3,h4,h5,h6,p,a,li {
+	margin: 0;
+	font-family:"MicrosoftYaHei";
+}
+a:link{
+	text-decoration:none;
+}
+h1 {
+	margin: 30px 0px 10px 0px;
+	color: #555;
+}
+h1 a{
+	color: #555;
+}
+h1 a:hover{
+	color: #000000;
+}
+p{
+	color: #555;
+	text-align: justify;
+	font-size: 15px;
+	margin-top: 20px;
+}
+.header{
+	background-color: #262D3A;
+	height: 110px;
+	width: 100%
+}
+.header-center{
+	margin: 0 auto;
+	height: 100%;
+	width: 70%;
+	color: #FFFFFF;
+	overflow: hidden;
+	display: flex;
+}
+.header-center a{
+	color: #FFFFFF;
+}
+.logo{
+	float: left;
+	height: 100%;
+	width: 40%;
+	padding-top: 15px;
+}
+.logo-name{
+	color: #FFFFFF;
+	font-size: 32px;
+	text-decoration:none;
+}
+.logo-text{
+	color: #FFFFFF;
+	margin-top: 5px;
+}
+.nav{
+	float: right;
+	height: 110px;
+	width: 800px;		
+}
+.nav li{
+	float: left;
+	list-style: none;
+	line-height: 110px;
+	margin-left: 25px;
+	font-size: 17px;
+}
+.nav-ul{
+	margin: 0 auto;
+	display: inline-block;
+	float: right;
+}
+.nav-ul a{
+	padding-bottom: 5px;
+}
+.nav-ul a:hover{
+	border-bottom: 3px solid #fff;
+}
+.warp{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+.content{
+	margin: 50px auto;
+	height: auto;
+	width: 70%;
+	background-color: #FFFFFF;
+	overflow: hidden;
+}
+.main{
+	height: auto;
+	width: 60%;
+	float: left;
+}
+.log{
+	padding: 40px 20px 40px 40px;
+}
+.log-time{
+	color: #555;
+}
+.lis{
+	margin-left: 50px;
+	margin-bottom: 3px;
+}
+.lis a{
+	font-size: 16px;
+	color: #555;
+}
+.lis a:hover{
+	color: #000;
+}
+/*相册*/
+.photo-title{
+	margin-left: 30px;
+}
+.photo{
+	float: left;
+	margin: 30px;
+}
+.photo img{
+	height: 240px;
+	cursor: pointer;
+	transition: all 0.6s;
+}
+.photo img:hover{
+	transform: scale(1.05);
+	box-shadow: 5px 5px 10px #888888;
+}
+.photo-fo{
+	height: 240px;
+	width: 240px;
+	float: left;
+	margin: 30px;
+	border: 1px solid #555;
+}
+.photo-fo img{
+	
+	cursor: pointer;
+	transition: all 0.6s;
+	width:100%!important;height:auto!important
+}
+.photo-fo img:hover{
+	transform: scale(1.05);
+	box-shadow: 5px 5px 10px #888;
+}
+
+/*侧边栏*/
+.sidebar{
+	height: 80%;
+	width: 30%;
+	float: right;
+	padding-left: 10px;
+}
+
+.sidebar-sub{
+	margin:50px 0px;
+}
+
+.footer{
+	height: 200px;
+	background-color: #262D3A;
+}

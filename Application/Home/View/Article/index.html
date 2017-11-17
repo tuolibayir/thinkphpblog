@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>博客</title>
+
+		<include file="Common:header"/>
+    	
+
+			<div class="content">
+				<div class="main">
+					<div class="log">
+						<h1>归档</h1>
+						<volist name="articles" id="vo">
+						<div class="lis"><a href="__MODULE__/Article/post/id/{$vo.a_id}">
+						{$vo.time|date="Y-m-d H:i",###}  {$vo.a_title}</a></div>
+						</volist>
+					</div>
+				</div>
+
+
+	<include file="Common:right"/>	
+	<include file="Common:footer"/>				
+				

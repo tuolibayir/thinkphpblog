@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<include file="Common:header"/>
+
+			<div class="content">
+				<div class="main">
+					<div class="log">
+						<h1>{$articles.a_title}</h1>
+						<span class="log-time">发表于{$article.time|date="Y-m-d H:i",###}</span>
+						<p>
+							{$articles.a_content|htmlspecialchars_decode}
+						</p>
+					</div>
+				</div>
+
+
+	<include file="Common:right"/>	
+	<include file="Common:footer"/>				
+				
